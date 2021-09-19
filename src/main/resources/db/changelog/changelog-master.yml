@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: J1
+      labels: master-create.sql
+      changes:
+        - sqlFile:
+            path: db/changelog/master-create.sql
+  - changeSet:
+      id: 1
+      author: J2
+      labels: master-insert.sql
+      changes:
+        - sqlFile:
+            path: db/changelog/master-insert.sql 
