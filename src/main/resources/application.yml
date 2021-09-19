@@ -1,5 +1,13 @@
-
 spring:
-  boot:
-    active:
-      profile: local
+  application:
+    name: SpringBootLiquibaseDB
+  jpa:
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    enabled: true
+    changeLog: classpath:/db/changelog/changelog-master.yml
+    default-schema: public
