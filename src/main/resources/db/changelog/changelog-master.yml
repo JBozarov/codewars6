@@ -12,4 +12,4 @@ databaseChangeLog:
       labels: master-insert.sql
       changes:
         - sqlFile:
-            path: db/changelog/master-insert.sql 
+            path: db/changelog/master-insert.sql
